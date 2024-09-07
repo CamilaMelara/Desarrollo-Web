@@ -1,0 +1,49 @@
+
+body{
+    background-color: lightblue;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+ul{
+    width: 80%; /*toma el80% de la c;ase container que es 90%*/
+    margin: 0 auto; /*con esto centramos*/
+
+
+
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid gray;
+}
+li:nth-child(even){ /* para poner pares de un solo a lo que le quiero dar backround color* o se puede como 2n+1*/
+    background-color: blueviolet;
+}
+li:nth-child(odd){/* para poner impares de un solo a lo que le quiero dar backround color*/
+    background-color: crimson;
+}
+/* Para hacer una tabla tipo zebra se hace asi */
+table{
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse; /*es para que tengan un espacio las seldas en medio, para que no esten pegadas*/
+}
+thead{
+    background-color: darkmagenta;
+    color: white;
+    font-weight: bold;
+}
+tbody tr:nth-child(2n+2){
+    background-color: lightgray;
+}
+tbody tr:hover{
+    background-color: darkmagenta;
+    color: white;
+}

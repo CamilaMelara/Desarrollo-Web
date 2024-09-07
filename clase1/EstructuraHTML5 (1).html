@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Semantica HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Paises de Centro America</h1>
+    </header>
+    <nav>
+        <p>Aquí debe ir el menú de navegación</p>
+        <a href="file:///C:/Users/camil/OneDrive/Desarrollo%20Web/clase1/EstructuraHTML5.html" target="_blank" > Ver nuestro primer ejemplo</a>
+        <!-- -blanck hace que lo abrá en otra pestaña -->
+    </nav>
+    <section>
+        <article>
+            <h2>El Salvador</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, tenetur.</p>
+            <img src="c:\Users\camil\OneDrive\Imágenes\ws_El_Salvador_Flag_1920x1200.webp" width="400px" alt="Bandera de El Salvador">
+            <div>
+                <p> Los departamentos de El Salvador son 14:</p>
+                <ul>
+                    <li>Lorem.</li>
+                    <li>Animi.</li>
+                    <li>Magni.</li>
+                    <li>Quidem?</li>
+                    <li>Fugit?</li>
+                    <li>Rerum!</li>
+                    <li>Laboriosam!</li>
+                    <li>Nisi!</li>
+                    <li>Commodi.</li>
+                    <li>Quaerat!</li>
+                    <li>Magnam.</li>
+                    <li>Recusandae.</li>
+                    <li>Quisquam!</li>
+                    <li>Eos.</li>
+                </ul>
+                <!--PARA UNA LISTA DESORDENADA "ul>li*14" lo que hace es crear los li 14 veces para los 14 deparamentos y "ul>(li>lorem1)*14" para generar los 14 li con lorem 1-->
+            </div>
+            <div>
+                <table border="1">
+                    <!-- Para crear una tabla primero <table> -->
+                    <!-- Dentro de table se coloca border para colocarle bordes -->
+                    <!-- Luego <tr> para definir una fila dentro de la tabla -->    
+                    <!-- <th> es para colocar el encabezado de una tabla -->
+                    <!-- <td> es para colocar la información en una celda-->
+                    <!-- Colspan dentro de td sirve para combinar columnas-->
+                    <!-- Rowspan dentro de td sirbe para combinar filas -->
+                    <tr>
+                        <th>Caracteristicas</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Idioma</td>
+                        <td>Español</td>
+                    </tr>
+                    <tr>
+                        <td>Moneda</td>
+                        <td>Dolar, BTC</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Celda Combinada</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <article>
+            <h2>Guatemala</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit?</p>
+            <img src="c:\Users\camil\OneDrive\Imágenes\guatamala.jpeg" alt="Guatemala" width="400px">
+            <div>
+                <p>Guatemala tiene 20 zonas:</p>
+                <ol>
+                    <li>Lorem.</li>
+                    <li>Ab.</li>
+                    <li>Totam.</li>
+                    <li>Vero?</li>
+                    <li>Totam.</li>
+                    <li>Impedit!</li>
+                    <li>Culpa.</li>
+                    <li>Fuga?</li>
+                    <li>Sapiente!</li>
+                    <li>Aliquid!</li>
+                    <li>Necessitatibus.</li>
+                    <li>Ut.</li>
+                    <li>Voluptatem!</li>
+                    <li>Explicabo.</li>
+                    <li>Dignissimos!</li>
+                    <li>Neque.</li>
+                    <li>Expedita.</li>
+                    <li>Dolore.</li>
+                    <li>Molestiae!</li>
+                    <li>Ullam?</li>
+                </ol>
+                <!-- PARA UNA LISTA ORDENADA "ol>(li>lorem1)*20"-->
+            </div>
+        </article>
+    </section>
+
+    <aside>
+        <p>Acá debe ir la barra de navegación lateral</p>
+    </aside>
+
+    <footer>
+        Desarrollo Web I. Todos los derechos reservados
+    </footer>
+
+</body>
+</html>

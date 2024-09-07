@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: green;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+section article{ /*esto hace que le de formato a mi pagina, todo queda mas ordenado*/
+    width: 32.3%;
+    float: left;
+    border: 2px silver solid;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0.50%;
+    border-radius: 15px;
+    height: 400px;
+    box-shadow: 10px 15px lightpink;
+
+}
+article h3{
+    color: green;
+    text-align: center;
+}
+article img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
