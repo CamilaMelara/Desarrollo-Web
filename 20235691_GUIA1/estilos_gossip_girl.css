@@ -1,0 +1,92 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #2d2c55;
+    color: gold;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.main-title{
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+    font-size: 5em;
+    text-align: center;
+    margin: 20px 0;
+}
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+.Reparto{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+.intro-text{
+    font-size: 1.5em;
+    color: #ecf8f8;
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 10%;
+}
+.reparto-section{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.cast-image{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+.elenco-image{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.reparto-section h2{
+    color: gold;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.reparto-section p{
+    font-size: 1.2em;
+    color: white;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+}
+.cast-table{
+    width: 90%;
+    margin: 20 px auto;
+    border-collapse: collapse;
+}
+.cast-table th, .cast-table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.cast-table th{
+    background-color: lavenderblush ;
+    color: black;
+    font-weight: bold;
+}
+.footer-text{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px auto;
+}
