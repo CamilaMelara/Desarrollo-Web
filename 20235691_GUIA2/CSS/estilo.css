@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;;
+}
+
+header {
+    background-color: lightcoral;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1, header h2, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 5px 0;
+    line-height: 1.2;
+    padding-top: 0.05%;
+    background-color: #D1C4E9;
+    color: black;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section article, .Hobbies article {
+    width: 32%;
+    border: 2px lightpink solid;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #D1C4E9;
+    text-align: center;
+}
+
+article h3 {
+    color: black;
+    text-align: center;
+}
+
+article img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.Hobbies {
+    margin-top: 50px; 
+}
+
+.Hobbies h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+    background-color: #D1C4E9;
+    color: black;
+}

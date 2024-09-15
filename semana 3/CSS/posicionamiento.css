@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto; /*asi siempre se va a centrar algo*/
+    display: flex;  /*me pone las cajas en una sola fila*/
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 80px;
+}
+.caja{
+    width: 32.3%;
+    height: 200px;
+    border: 2px green solid;
+    float: left;
+    margin: 5px 0.5%;
+}
+.caja:nth-child(2){
+    background-color: aqua;
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+.caja :nth-child(5){
+    position: static;
+    top: 0px;
+    left: 30px;
+    background-color: plum;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: lightcoral;
+    color: white;
+    position: fixed;
+    top: 0; /*abajo 0*/
+    left: 0; /*derecha 0*/
+    z-index: 10;
+    padding-left: 30px;
+    display: flex; /*convierte la caja en contenedor flex box*/
+    justify-content: space-between; /*que los hijos directos de ese contenedor se encuentren lo mas separado posible*/
+    align-items: center;
+    
+}
+header nav a{
+    text-decoration: none; /*se usa que se quita el subrayado de abajo*/
+    color: white;
+    display: inline-block; /*Para que el elemento en linea actue como un bloque*/
+    padding: 24.5px 10px;
+}
+header nav a:hover{
+    background-color: black;
+
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+}
+
