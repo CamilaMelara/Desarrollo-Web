@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Evita que padding y border afecten al tamaño total */
+    box-sizing: border-box; 
 }
 
 body {
@@ -40,20 +40,22 @@ h2 {
 }
 
 section {
+    position: relative;
     margin: 0 auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0; 
+    overflow: hidden;
 }
 
 section article {
     font-size: 0.9rem;
     height: 340px;
-    width: 32%; 
+    width: 32.33%; 
     margin-bottom: 20px; 
-    padding: 10px;
+    padding: 1%;
     border: 2px dashed #16A085; 
     
 }
@@ -62,6 +64,12 @@ section article img {
     height: 180px;
     max-width: 100%;
     display: block;
-    margin: 0 auto; 
-    ;
+    margin: 5px auto; 
+    
+}
+section article :nth-child(2){
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    display: none;
 }
