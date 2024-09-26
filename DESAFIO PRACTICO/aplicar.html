@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="envoltorio">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
+					<li><a href="consejos.html">Consejos</a></li>
+					<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article class="ofertas">
+			<div class="envoltorio">
+				<h1>COMPLETA EL FORMULARIO DE INSCRIPCIÓN</h1>
+				<form action="aplicar.php" method="post">
+					<label for="Nombre">Nombre:</label>
+					<input type="text" id="Nombre" required><br><br>
+
+					<label for="Apellidos">Apellidos:</label>
+					<input type="text" id="Apellidos" required><br><br>
+
+					<label for="Carnet">Carnet:</label>
+					<input type="text" id="Carnet"required><br><br>
+
+
+					<label for="Departamento">Departamento:</label>
+					<select name="Departamento" id="Departamento" required>
+						<option value="">Seleccione su departamento de Residencia</option>
+						<option value="Ahuachapán">Ahuachapán</option>
+						<option value="Sonsonate">Sonsonate</option>
+						<option value="Santa Ana">Santa Ana</option>
+						<option value="La Libertad">La Libertad</option>
+						<option value="Chalatenango">Chalatenango</option>
+						<option value="San Salvador">San Salvador</option>
+						<option value="Cuscatlán">Cuscatlán</option>
+						<option value="La Paz">La Paz</option>
+						<option value="San Vicente">San Vicente</option>
+						<option value="Cabañas">Cabañas</option>
+						<option value="Usulután">Usulután</option>
+						<option value="San Miguel">San Miguel</option>
+						<option value="Morazán">Morazán</option>
+						<option value="La Unión">La Unión</option>
+					</select><br><br>
+
+					<label for="Edad">Edad:</label>
+					<input type="number" id="Edad" name="Edad" min="18" max="99" required><br><br>
+
+					<label for="Género">Género:</label>
+					<select name="Género" id="Género" required>
+						<option value="">Seleccione su Género</option>
+						<option value="Femenino">Femenino</option>
+						<option value="Masculino">Masculino</option>
+					</select><br><br>
+
+					<label for="Fecha de Nacimiento">Fecha de Nacimiento:</label>
+					<input type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento"><br><br>
+
+					<label for="Carrera">Carrera:</label>
+					<select name="Carrera" id="Carrera" required>
+						<option value="">Seleccione su Carrera</option>
+						<option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y Negocios Digitales</option>
+						<option value="Ingeniería de Negocios ">Ingeniería de Negocios </option>
+						<option value="Licenciatura en Economía y Negocios ">Licenciatura en Economía y Negocios </option>
+						<option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas</option>
+					</select><br><br>
+
+					<label for="Salario">Pretensión salarial (En Dólares):</label>
+					<input type="number" id="Salario" name="Salario" min="0" max="1000000"><br><br>
+
+					<button type="submit">Enviar Mis Datos</button>
+
+					</select>
+
+				</form>
+			</div>
+		</article>
+		
+	</section>
+	<footer>
+		<p>Creado por: camila Melara 20235691</p>
+	</footer>
+</body>
+</html>
+
+

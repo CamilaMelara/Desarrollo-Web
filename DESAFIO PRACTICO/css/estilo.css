@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.envoltorio {
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+header .envoltorio{ /*permite que todas las partes dentro de este contenedor tengan una misma estructura*/
+	width: 80%; /*Ancho de pagina sea 80%*/
+	overflow: hidden;/*Lo que se desborde no se vea*/
+	margin: 0 auto;/*se centre*/
+	display: flex;/*Para que el diseño de caja sea flexible*/
+	align-items: center;/*Alinea los items al centro*/
+	justify-content: space-between;
+}
+header{
+	height: 80%;/*tendra una altura de 80% no importa lo que tenga el viweport*/
+	width: 100%; /*Es lo de arribita que usa el 100% de la pagina*/
+	background-color: #37474F;/*va ser el fondo del nav*/
+	border-bottom: 5px solid #283593; /*Es linea de abajito azul sólida con grosor de 2px que se ve en la foto, corregido el orden*/
+}
+
+/*MENU DE NAVEGACION*/
+nav ul{/*el ul se usa para crear una lista de puntos no ordenada*/
+	list-style-type: none; /*elimina cualquier vineta que no se quiere agregar*/
+
+}
+nav li{ /*el li, son los puntos en las listas*/
+	line-height: 80px; /*es la altura de cada punto de la lista*/
+	text-transform: uppercase; /* que lo del nav salga en uppercase*/
+}
+nav a{
+	display: block; /*convierte los links en sistema de bloque*/
+	color: white; /* la letrita sea blanca*/
+	text-decoration: none;/*elimina esos subrayados de los links*/
+	padding: 0 2rem;/*espacio laterales*/
+}
+nav a:hover{
+	background-color: #212121; /*Cuando se pase por encima el mouse sea negrito, corregido*/
+}
+nav>ul{ /*aplica estilo a los hijos directos del nav*/
+	background-color: #37474F; /*sea el color de fondo*/
+	width: 100%; /*Su ancho sea el 100% del viewport*/
+	overflow: hidden; /*lo que se desborde ya no se vea*/
+}
+nav>ul>li{
+	float: left;
+}
+nav>ul>li>ul{
+	position: absolute; /*toma posición absoluta*/
+	display: none; /*que se escondan y salgan cuando se le dé click*/
+}
+nav>ul>li:hover ul{
+	display: block; /*hará que cuando pase encima de un elemento del menú, se despliegue una sublista*/
+}
+nav>ul>li>ul>li{
+	background-color: #283593;
+}
+
+/*INTRODUCCION*/
+.contenedor-slider{
+	text-align: center; /*que el texto se alinee al medio*/
+	border-bottom: white 2px solid;/*que el borde de abajo sea blanco*/
+}
+
+.intro{
+	background-color: #283593;/* color de fondo azul*/
+	margin-left: 95px;/*márgenes sean del mismo size*/
+	margin-right: 95px;/*márgenes sean del mismo size*/
+	padding-top: 40px;/*agrega espacio interno en la parte superior*/ 
+	padding-bottom: 40px;/*agrega espacio interno en la parte inferior*/
+	line-height: 1.5;/*distancia de párrafos sea de 1.5*/
+	color: white;/*letra sea blanca*/
+}
+.intro h1 a{ /*pone estilo al título que sirve como enlace*/
+	font-weight: lighter;/*hace que se vea más delgada la letra*/
+	color: white; /*letra blanca*/
+	text-decoration: none;/*que no salga el underline de abajo*/
+	font-size: 2.5rem;/*size letra*/
+	margin: 0 auto;
+}
+
+/*BOTON*/
+.boton{
+	background-color:#212121;/*color de fondo*/
+	text-align: center;/*texto en medio*/
+	text-decoration: none;/*sin el underline*/
+	color: white;/*letra blanca*/
+	display: block;/*que se comporte como bloque y use todo el ancho que tiene */
+	width: 150px;/*ancho*/
+	padding: 10px 15px; /*espacio interno en el botón*/
+	margin: 0 auto; /*centra el botón*/
+	margin-top: 30px;/*separa los elementos para que no queden pegados*/
+}
+.boton:hover{
+	background-color:#3F51B5; /*cambia de color al pasar el mouse*/
+}
+
+/*CONTENEDORES DE INFO*/
+.servicios .envoltorio{
+	display: flex; /*permite que los elementos hijos se alineen fácil*/
+	flex-wrap: wrap;/*si el espacio se reduce, no se desborden*/
+	justify-content: space-between;/*Que se puedan alinear mejor el primero y último con los bordes de la página*/
+}
+.envoltorio .grid{
+	width: 31.3%; /*ancho del grid, para que los 3 elementos se alineen*/
+	height: 400px;/*Altura*/
+	border: #37474F 1px solid;/*el borde de las fotos con margen gris*/
+	box-sizing: border-box;/*incluye borde y padding de un solo*/
+	box-shadow: 0 4px 10px #BDBDBD;/*es la sombra de las fotos*/
+	margin-top: 40px;/*el margen de las imágenes, arriba, abajo derecha e izquierda*/
+	margin: 40px 1% 40px;
+}
+.envoltorio .grid:nth-child(2n+1){/*selecciona elementos impares, corregido*/
+	height: 385px;/*le pone altura fija a elementos impares*/
+}
+.grid{
+	text-align: center; /*alinea texto*/
+}
+
+.grid h3{
+	text-transform: uppercase;/*pone el título en uppercase*/
+	color: #283593;/*color azul*/
+	font-size: 25px;
+	background-color: white;/*fondo blanco*/
+	margin: 0 20px 0;/*da espacio en medio del texto*/
+	border-bottom: white 1px solid;/*separa título de las imágenes*/
+	padding-bottom: 10px;/*da espacio interior inferior*/
+}
+.grid a img{
+	height: auto;/*ajusta la altura*/
+	width: 90%; /*ancho de los cuadritos*/
+	margin: 10px auto; /*margen para centrar*/
+	display: block;/*convierte en bloque*/
+	padding: 10px;/*espacio interior*/
+}
+.grid p{
+	color: #BDBDBD; /*letra del párrafo gris*/
+	text-align: justify;/*texto justificado*/
+	padding: 20px;/*espacio alrededor del texto*/
+	padding-bottom: 10px; /*espacio inferior*/
+}
+
+/*DECORACION DEL BOTONCITO*/
+.grid .botoncito{
+	color: white;/*letra blanca*/
+	text-transform: uppercase;/*pone el texto en mayúsculas*/
+	background-color: #283593;/*color de fondo del botoncito*/
+	text-decoration: none;/*quita el underline*/
+	padding: 15px 20px;/*espacio interno arriba y abajo*/
+}
+.botoncito:hover{
+	background-color: #283593;/*fondo cuando se pasa por el botoncito*/
+}
+
+/*SECCION DE TESTIMONIOS*/
+.testimonios{
+	color: black;/*texto negro*/
+	height: 275px;/*altura del bloque*/
+	background-color: #FAFAFA;/*fondo blanco*/
+	align-content: center;/*alineación centrada*/
+	margin: 0 95px 0 95px;/*márgenes laterales*/
+	line-height: 2;
+}
+.testimonios h3{
+	text-align: center;/*centrado*/
+	font-weight: lighter;/*letra más ligera*/
+	font-size: 40px;/*tamaño de la fuente*/
+	padding: 10px;/*espacio interno*/
+}
+.testimonios p{
+	color: #BDBDBD;/*texto gris*/
+}
+
+/*FOOTER*/
+footer{
+	background-color:#37474F;/*fondo gris*/
+	color: white;/*letra blanca*/
+	width: 100%;/*todo el ancho del viewport*/
+	height: 25px;/*estatura del footer*/
+	justify-content: left;/*mueve el texto hasta izquierda*/
+}
+
+/*SECCION DE OFERTAS*/
+.ofertas h1{
+	color: #283593; /*Letra azul*/
+	font-size: 35px;/*size de letra*/
+	text-align: center;/*centra contenido*/
+	font-weight: bold;/*letra negrtita*/
+	padding: 50px 0 0 0 0;/*espacio inyerno*/
+}
+
+/*TABLA DE OFERTAS*/
+.tabla{/*define los estilos generales */
+	width: 80%;/*ancho de la tabla*/
+	margin: 30px auto;/*margen superior e inferior y centra la tabla horizontal*/
+	border-collapse: collapse;/*que las celdas compartan los bordes*/
+}
+.tabla th, .tabla td{/*aplica el mismo estilo a las dos celdas las de th y td*/
+	border: #BDBDBD 2px solid;/*borde grisde 2pixeles*/
+	padding: 10px; /*espacio interno en cada celda*/
+	text-align: center; /*centra el texto*/
+}
+.tabla th{/*estilo a los encabezados th*/
+	background-color: black;/*color de fondo sea azul*/
+	color: white;/*letra blanca*/
+	font-weight: bold;/*que este en negrita*/
+}
+.tabla tr:nth-child(2n+1){/*aplica estilo filas impares*/
+	background-color:#C5CAE9;/*color claro de fondo*/
+}
+tbody tr td a { /*estilo a los enlaces adentro de las celdas de una tabla*/
+	background-color: #8E24AA; /* Color del botón APLICAR*/
+	padding: 8px 10px;/*Espacio interno superior e inferior e izquierda y derecha*/
+	text-decoration: none;/*le quita el underline*/
+	color: white;/*letra blanca*/
+	font-weight: bold;/*en negrita*/
+	font-size: 14px;/*size de letra*/
+	text-transform: uppercase;
+}
+tbody tr td a:hover{
+	background-color: #cdadc1;
+}
+
+/*SECCION DE CONSEJOS*/
+.consejos{
+	text-align: center;/*centra el texto*/
+	padding: 40px 20px;/*espacio interno*/
+	background-color: #C5CAE9;
+}
+.consejos h1{ /*pone estilo al encabezado*/
+	text-align: center;/*centra el texto*/
+	color: #283593; /*letra azul*/
+	font-size: 30px;/*size de letra*/
+	font-weight: bold;/*en negrita*/
+	margin-bottom: 50px;/*separa el encabezado de lo demas*/
+}
+.consejos video{
+	display: block;/*convierte un elemento in line en bloque*/
+	margin: 0 auto;/*centra el video*/
+	max-width: 80%;/*video sea responsivo*/
+	border-radius: 5px;/*borde redondo*/
+}
+
+/*SECCION DE APLICAR*/
+.aplicar h1{
+	color: #283593;/*color letra*/
+	font-size: 30px;/*tamanio*/
+	text-align: center;/*centrado*/
+}
+form{
+	width: 60%; /*Ancho del forms*/
+	margin: 0 auto; /*Centrar el forms*/
+	padding: 20px;
+	background-color: #dee9eb; /* Color de fondo */
+	border-radius: 5px; /* Bordes redondeados */
+	box-shadow: #212121 0 4px 10px; /*Sombra*/
+}
+  
+form p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center; /* Centrar el texto */
+	margin-bottom: 20px;
+}
+  
+label{ /*le da estilo a los label*/
+	display: block;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+	width: 100%; /* Ocupa todo el ancho */
+	padding: 10px;
+	margin-bottom: 15px; /* Separar cada campo */
+	border: 1px solid #ccc; /* Borde*/
+	border-radius: 5px; /* Bordes redondeados */
+	box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+	font-size: 16px;
+}
+
+button:hover{
+	background-color: #25bc7b; 
+}

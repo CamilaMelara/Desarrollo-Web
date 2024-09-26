@@ -1,0 +1,29 @@
+.root{
+    --fondo: rgb(53, 58, 150);/*defino los colores que voy a usar*/
+    --fondo-items: rgb(67, 216, 134);
+
+   
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo);/*los mando a llamar con var*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    width: 80%;
+    margin: 10px auto;
+}
+.item{
+    background-color: var(--fondo-items);
+    width: 25%;
+    font-size: 1.5rem;
+    border: thin solid white;
+}
