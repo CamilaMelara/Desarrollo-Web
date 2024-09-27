@@ -80,12 +80,18 @@ nav>ul>li>ul>li{
 	line-height: 1.5;/*distancia de párrafos sea de 1.5*/
 	color: white;/*letra sea blanca*/
 }
+
+.intro h1 {
+	text-align: center;
+}
+
 .intro h1 a{ /*pone estilo al título que sirve como enlace*/
 	font-weight: lighter;/*hace que se vea más delgada la letra*/
 	color: white; /*letra blanca*/
 	text-decoration: none;/*que no salga el underline de abajo*/
 	font-size: 2.5rem;/*size letra*/
 	margin: 0 auto;
+	text-align: center;
 }
 
 /*BOTON*/
@@ -268,7 +274,7 @@ form{
 form p{
 	font-size: 20px;
 	font-weight: bold;
-	text-align: center; /* Centrar el texto */
+	text-align: center; /*Centra el texto*/
 	margin-bottom: 20px;
 }
   
@@ -277,17 +283,16 @@ label{ /*le da estilo a los label*/
 	font-weight: bold;
 	margin-bottom: 8px;
 }
-  
   input[type="text"],
   input[type="number"],
   input[type="date"],
   select {
-	width: 100%; /* Ocupa todo el ancho */
+	width: 100%; /*Ocupa todo el ancho*/
 	padding: 10px;
 	margin-bottom: 15px; /* Separar cada campo */
-	border: 1px solid #ccc; /* Borde*/
-	border-radius: 5px; /* Bordes redondeados */
-	box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+	border: 1px solid #ccc; /*Borde*/
+	border-radius: 5px; /* Bordes redondeados*/
+	box-sizing: border-box; 
 	font-size: 16px;
 }
 
