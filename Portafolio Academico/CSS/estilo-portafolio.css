@@ -55,6 +55,7 @@ header h1{
 }
 .presentacion h1{
     text-align: center;
+    padding-top: 20px;
 }
 .presentacion{
     margin-top: 20px;
@@ -65,9 +66,14 @@ header h1{
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    margin: 50px;
 }
 .descripcion h2{
     text-align: center;
+    color: var(--hover);
+}
+.descripcion strong{
+    color: var(--hover);
 }
 .presentacion img{
     width: 300px;
@@ -175,4 +181,18 @@ header h1{
     position: absolute;
     left: 0;
     font-size: 1.2em;
+}
+
+/*footer*/
+footer{
+    background-color: var(--hover);
+    color: var(--backround2);
+    text-align: center;
+    padding: 15px 0;
+    font-size: small;
+    border-radius: 8px;
+}
+footer p{
+    margin: 0;
+    opacity: 0.6;
 }
