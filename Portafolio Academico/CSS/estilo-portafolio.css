@@ -503,3 +503,73 @@ h1{
     height: 200px;
     margin-bottom: 15px;
 }
+
+/*SECCION APRENDIZAJE*/
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-letra);
+    border-radius: 8px;
+}
+.recursos-adicionales {
+    margin-bottom: 30px;
+    
+}
+.recursos-adicionales h2 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--hover);
+    margin-bottom: 10px;
+}
+.recursos-adicionales ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: var(--color-nav);
+}
+.recursos-adicionales li {
+    margin: 10px 0;
+    padding-left: 25px; 
+    position: relative;
+    text-decoration: none;
+    color: var(--backround);
+    font-size: large;
+}
+.recursos-adicionales li, a{
+    color: var(--backround2);
+    font-weight: bold;
+    text-decoration: none;
+}
+.recursos-adicionales li, a:hover{
+    color: var(--color-nav);
+    text-decoration: none;
+}
+.recursos-adicionales li::before {
+    content: '✔️'; 
+    position: absolute;
+    left: 0; 
+    color: var(--hover);
+}
+.planes-futuros h2 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--backround2);
+    margin: 20px 0;
+}
+.planes-futuros {
+    text-align: center; 
+}
+.planes-futuros img {
+    width: 500px;
+    height: 250px;
+    margin: 15px 0; 
+    border-radius: 8px;
+}
+.planes-futuros p {
+    font-size: 20px;
+    color: var(--hover);
+    line-height: 1.6;
+    text-align: justify;
+}
