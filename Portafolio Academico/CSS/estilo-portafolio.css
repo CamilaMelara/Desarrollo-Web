@@ -388,3 +388,118 @@ h1{
         grid-template-columns: 1fr;
     }
 }
+
+/*PAGINA DE FODA Y RETROALIMENTACION*/
+.intro{
+    background-color: var(--backround2);
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.intro h1{
+    font-size: 45px;
+    color: var(--color-nav);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.intro p{
+    color: var(--color-letra);
+    font-size: 20px;
+}
+/*cajitas de info*/
+.box {
+    width: 75%;
+    margin: 20px auto;
+    background-color: var(--color-letra);
+    padding: 20px;
+    border-radius: 8px;
+}
+.box h2 {
+    font-size: 35px;
+    color: var(--hover);
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.box-info {
+    display: flex;
+    align-items: center;
+}
+.box-info img {
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.box-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--backround);
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/*SECCION DE RETROALIMENTACION*/
+.feedback{
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--backround2);
+}
+.feedback h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-nav);
+}
+.feedback-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.feedback-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 350px;
+    min-width: 280px;
+    background-color: var(--color-letra);
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: var(--hover) 0px 0px 8px;
+}
+.feedback-box h3{
+    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--backround2);
+    text-align: center;
+}
+.feedback-box p{
+    font-size: 18px;
+    color: var(--hover);
+    line-height: 1.5;
+    text-align: justify;
+}
+.feedback-box img{
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--backround2);
+    padding: 15px;
+    height: 200px;
+    margin-bottom: 15px;
+}
