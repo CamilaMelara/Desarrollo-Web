@@ -351,3 +351,40 @@ h1{
         font-size: small;
     }
 }
+/*DESCRIPCION GUIAS*/
+.info-guias{
+    margin-top: 20px;
+}
+.info-guias h1{
+    background-color: var(--hover);
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--backround);
+    border-radius: 8px;
+}
+.descripcion-guias{
+    background-color: var(--color-letra);
+    box-shadow: 0 4px 8px var(--color-nav);
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.descripcion-guias p{
+    color: var(--backround2);
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    margin-top: -50px;
+}
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+    .guias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .guias {
+        grid-template-columns: 1fr;
+    }
+}
